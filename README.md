@@ -1,6 +1,6 @@
 # To-do-list
 
 ### Primero instalar todos los paquetes a usar
-#### npm install
+##### npm install
 ### Empezar el servidor de node
-#### node app.js
+##### node app.js
