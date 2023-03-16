@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/x-www-form-urlencoded
 
-mongoose.connect('mongodb://3.94.20.217:27017/TodoList', { useNewUrlParser: true });
+mongoose.connect('mongodb://44.204.124.88:27017/TodoList', { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
