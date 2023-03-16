@@ -55,6 +55,11 @@
       ports:
       - "3003:3001"
 
+  - name: Start Docker Compose
+      command: docker-compose up -d
+      args:
+        chdir: /path/to/docker-compose/
+
 #Si no funciona lo anterior para balancear se puede intentar el siguiente en base a los plantillas de 
 #nginx y compose
 #  vars:
@@ -63,13 +68,14 @@
  # tasks:
   #  - name: Copy docker-compose.yml
    #   template:
-    #    src: docker-compose.yml.j2
+    #    src: docker-compose.yml.v2
      #   dest: /path/to/docker-compose.yml
       #  mode: '0644'
 #
  #   - name: Copy nginx.conf
   #    template:
-   #     src: nginx.conf.j2
+  #      Este es para tomar la plantilla si es necesario
+   #     src: nginx.conf.plantilla
     #    dest: /path/to/nginx.conf
      #   mode: '0644'
 #
