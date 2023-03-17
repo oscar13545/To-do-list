@@ -4,6 +4,8 @@
 ***
 Esto son los commandos que usa Dockerfile 
 Primero instalar todos los paquetes a usar
+***
+
 $ npm install
 Empezar el servidor de node
 $ node app.js
